@@ -1,0 +1,15 @@
+iniciar aula 08 
+
+* Como adicionar UTF8?
+#-*- coding: utf-8 -*-
+
+* Comentarios:
+São marcados por #para apenas uma linha ou """ varias linhas """
+
+* Rodar o script:
+Pelo CMD - abre o cmd na janela do arquivo e digita a palavra python nomeDoArquivo.py
+
+* Como funciona ?
+Desenvolve o script -> Chama o interpretador -> Python compila e exibe os resultados
+
+* A Linguagem Python é de alto nível e dinâmica, fortemente tipada
