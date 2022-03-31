@@ -1,4 +1,12 @@
-iniciar aula 08 
+Iniciar Teste 1 Condicionais 
+
+* Operadores Lógicos :
+and - uma comparação onde todos os itens devem ser verdade
+or - uma comparação onde pelo menos um dos itens é verdade
+not - uma comparação onde nenhum dos itens devem ser verdade
+
+* Exponenciação em python é simbolizado por: **
+Ex: 2 ** 3 é dois elevado ao cubo
 
 * Como adicionar UTF8?
 #-*- coding: utf-8 -*-
