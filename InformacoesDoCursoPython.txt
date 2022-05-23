@@ -1,23 +1,195 @@
-Iniciar Teste 1 Condicionais 
+* Manipulando Arquivos:
 
+Abrindo Arquivos:
+Função open. EX: variavel = open(nome,modo)
+
+Modo / Função
+r -> somente leitura
+w -> escrita (caso o arquivo já exista, ele será apagado e um novo arquivo vazio será criado)
+a -> leitura e escrita (adiciona o novo conteudo ao fim do arquivo)
+r+ -> leitura e escrita
+w+ -> escrita( o modo w+, assim como o w, também apaga o conteudo anterior do arquivo)
+a+ -> leitura e escrita (abre o arquivo para atualização)
+
+Lendo Arquivos:
+Lê arquivo inteiro. EX: read()
+Lê uma linha. EX: readline()
+Lê arquivo e o armazena em uma lista. EX: readlines()
+
+------------------------------------------------------------------------------------------------
+* Funções: são blocos de código que serão executados apenas quando chamados.
+
+def - é a palavra reservada para indicar uma função
+EX:
+Definição: def NOME(PARÂMETROS):
+		Comandos
+Chamada: NOME(ARGUMENTOS)
+
+
+Exemplo de uma função simples:
+def soma(a,b):
+    return(a+b)
+
+print("Digite o numero a:")
+a = int(input())
+print("Digite o numero b:")
+b = int(input())
+
+result = soma(a,b)
+print("A soma de a + b é: ",result) 
+
+------------------------------------------------------------------------------------------------
+* Strings: é um tipo de dados em que se armazena coleções de caracteres (texto)
+
+São declaradas entre aspas. Ex: var2 = "1"
+
+Concatenação de Strings: é a soma de duas ou mais variaveis.
+Ex:
+a = Steve
+b = Strange
+concatenar = a + " " + b
+print(concatenar)
+
+A função length indica o tamanho de uma string
+Ex: 
+tamanho = len(concatenar)
+print(tamanho)
+
+Navegação pelo indice de uma string pode ser feita atraves de colchetes:
+EX:
+letra = seq[1]
+print(letra)
+
+Imprimir parte de uma string, Ex:
+seq = "Steve Strange"
+print seq[0:4]
+
+String é um objeto então pode ser aplicados métodos. 
+EX:
+string = string.método()
+
+Removendo espaços no começo e no fim da string
+EX: 
+concatenar = concatenar.strip()
+
+Converte uma string em uma lista
+EX:
+concatenar = concatenar.split()
+
+Buscar substrings. Se a substring não for achada será retornado o valor -1
+EX:
+busca = concatenar.find("teve")
+print busca
+
+Substitui partes de uma string.
+EX:
+concatenar = concatenar.replace("teve","tive")
+print concatenar
+
+------------------------------------------------------------------------------------------------
+* Objetos: são instâncias de classes. Por exemplo, quando você cria uma variável 
+com uma string, você está criando um objeto do tipo string.
+
+Objetos possuem atributos ( caracteristicas ) e métodos ( ações que podem ser 
+aplicadas )
+
+Exemplo:
+	objeto.atributo
+	objeto.método()
+
+------------------------------------------------------------------------------------------------
+* for: é um tipo de laço de repetição que tem por objetivo repetir uma condição
+ou um trecho de código enquanto a variavel de iteração ainda for valida.
+
+Exemplo:
+	for i in range(0,5):
+		print i
+
+------------------------------------------------------------------------------------------------
+* while: é um tipo de laço de repetição que tem por objetivo repetir uma condição
+ou um trecho de código enquanto a variavel de iteração ainda for valida.
+
+Exemplo:
+
+i = 0
+while i < 5:
+	print("i:",i)
+	#i = i + 1 
+	i += 1
+
+------------------------------------------------------------------------------------------------
+*Laços de Repetição: Estruturas de repetição, que possuem iteradores que são
+variáveis incrementadas ou decrementadas de acordo com o tamanho do laço, 
+durante esse loop de repetição uma ação é executada.
+
+------------------------------------------------------------------------------------------------
+*Comando condicional:
+if - identifica uma condição feita, e o seu resultado irá determinar o fluxo 
+que o código pode levar. Exemplo 1
+
+else - a opção oposta da condição tomada, se o resultado não entrar no 
+if poderá entrar no else Exemplo 2
+
+elif - identifica duas condições feitas, uma condição oposta ao if anterior e 
+uma outra nova condição que pode surgir. Exemplo 3
+
+Exemplo1:
+x = 1
+y = 2
+
+if x > y:
+	print("x maior que y")
+else:
+	print("x menor que y")
+
+Exemplo2:
+
+a = 7
+b = 6
+
+if b > a:
+	if b > 0:
+		print("b é maior que a\nb é positivo")
+	else:
+		print("b não é maior que a nem positivo")
+else:
+	print "b menor que a"
+
+Exemplo 3: 
+
+x = 1
+y = 2
+
+if x == y:
+	print("numeros iguais")
+elif y > x:
+	print("y maior que x") 
+
+------------------------------------------------------------------------------------------------
 * Operadores Lógicos :
 and - uma comparação onde todos os itens devem ser verdade
 or - uma comparação onde pelo menos um dos itens é verdade
 not - uma comparação onde nenhum dos itens devem ser verdade
 
+------------------------------------------------------------------------------------------------
 * Exponenciação em python é simbolizado por: **
 Ex: 2 ** 3 é dois elevado ao cubo
 
+------------------------------------------------------------------------------------------------
 * Como adicionar UTF8?
 #-*- coding: utf-8 -*-
 
+------------------------------------------------------------------------------------------------
 * Comentarios:
 São marcados por #para apenas uma linha ou """ varias linhas """
 
+------------------------------------------------------------------------------------------------
 * Rodar o script:
 Pelo CMD - abre o cmd na janela do arquivo e digita a palavra python nomeDoArquivo.py
 
+------------------------------------------------------------------------------------------------
 * Como funciona ?
 Desenvolve o script -> Chama o interpretador -> Python compila e exibe os resultados
 
+------------------------------------------------------------------------------------------------
 * A Linguagem Python é de alto nível e dinâmica, fortemente tipada
