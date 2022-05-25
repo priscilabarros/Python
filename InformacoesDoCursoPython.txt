@@ -1,3 +1,81 @@
+
+* Dicionarios:
+
+Valores especificos são vinculados a uma chave. Exemplo:
+dicionario_sites = {"Strange": "multiverseofmadness.com"}
+
+No exemplo uma chave "Strange" foi vinculada ao valor "multiverseofmadness.com". Pode ser impressa da seguinte forma:
+print(dicionario_sites['Strange'])
+# Sera impresso "multiverseofmadness.com"
+
+Se o dicionario tiver varios elementos, você pode usar laços para imprimi-lo:
+dicionario_sites = {"Strange": "multiverseofmadness.com", "Peter": "semvoltaparacasa.com", "Tony": "ironman.com"}
+
+for chave in dicionario_sites:
+	print(dicionario_sites[chave])
+
+-------------------------------------------------------------------------------
+* Listas:
+
+Listas representam conjuntos de dados. Podem ser:
+- Numérica: [1,2,3,4,5]
+- Strings: ["bola","sapato","chuva"]
+
+Como declarar uma lista:
+minha_lista = ["abacaxi","melancia","abacate"]
+minha_lista2 = [1,2,3,4,5]
+minha_lista3 = ["abacaxi",2,9.89,True]
+
+Como imprimir uma lista:
+print(minha_lista)
+print(minha_lista2)
+print(minha_lista3)
+
+Como fazer uma navegação na lista (printar um elemento especifico):
+print(minha_lista[2])
+
+For em uma lista:
+for item in minha_lista:
+	print(item)
+
+Como verificar tamanho de uma lista:
+através da função len().Exemplo:
+tamanho = len(minha_lista)
+
+Como adicionar um elemento na lista:
+usando o metodo append().Exemplo:
+minha_lista.append("limao")
+
+Como verificar se um elemento pertence a uma lista:
+usando a palavra reservada in, pode ser combinada com a condicional if. Exemplo:
+if 3 in minha_lista2:
+	print("3 esta na lista")
+
+Como remover elementos de uma lista:
+usa-se o del. Exemplo:
+#irá remover do elemento 2 ate o final da lista
+del minha_lista[2:] 
+
+#irá remover todos os elementos da lista
+del minha_lista[:] 
+
+Como ordenar listas:
+utiliza o metodo sort. se for uma lista de string ela será ordenada alfabeticamente. Exemplo:
+minha_lista.sort()
+
+OBS: a função sorted também ordena listas mas algum objeto deve ser retornado. Exemplo:
+minha_lista = sorted(minha_lista)
+
+Como ordenar de forma decrescente:
+usa-se o parametro reverse. Exemplo:
+minha_lista.sort(reverse=True)
+
+OBS: se o reverse for usado como um metodo, então ele irá inverter os elementos da lista.Exemplo:
+minha_lista.reverse()
+
+
+----------------------------------------------------------------------------------
+
 * Manipulando Arquivos:
 
 Abrindo Arquivos:
@@ -15,6 +93,42 @@ Lendo Arquivos:
 Lê arquivo inteiro. EX: read()
 Lê uma linha. EX: readline()
 Lê arquivo e o armazena em uma lista. EX: readlines()
+
+Como abrir um aruivo:
+arquivo = open("arquivo.txt")
+
+Leitura de linhas em um arquivo:
+linhas = arquivo.readlines()
+
+Este comando salva todas as linhas do arquivo em formato de lista dessa forma se for feito necessário imprimir 
+pode-se usar um for para imprimir linha a linha ou pode se usar um print no entanto o print ira imprimir como
+uma lista horizontal separando cada linha por virgula.
+
+Impressão das linhas do arquivo:
+Exemplo 1: 
+print(linhas)
+
+Exemplo 2:
+for linha in linhas:
+	print(linha)
+
+Com a Função read() o arquivo será lido por inteiro. Exemplo:
+
+texto_completo = arquivo.read()
+
+Como criar um arquivo:
+w = open("arquivo2.txt","w")
+w = open("arquivo2.txt","a")
+
+Como escrever em um arquivo:
+w.write("Esse eh o meu arquivo\n")
+
+Como fechar um arquivo:
+w.close()
+
+
+
+
 
 ------------------------------------------------------------------------------------------------
 * Funções: são blocos de código que serão executados apenas quando chamados.
