@@ -1,4 +1,63 @@
+Lista de exercícios 1
+1. Faça um programa que receba a idade do usuário e diga se ele é maior ou menor de idade.   
+2. Faça um programa que receba duas notas digitadas pelo usuário. Se a nota for maior ou igual a seis, escreva aprovado, senão escreva reprovado.   
+3. Escreva um programa que resolva uma equação de segundo grau.   
+4. Escreva um programa que ordene uma lista numérica com três elementos.   
+5. Escreva um programa que receba dois números e um sinal, e faça a operação matemática definida pelo sinal.    
 
+--------------------------------------------------------------------------------------------------------------------------
+* Python 2 vs. Python 3:
+
+A maior diferença é a performance do Python 3 que é superior. 
+Diferença de sintaxe:
+1)Comando Print no python 3 é obrigatório
+
+2)Comando input no Python 2 há duas variações 
+raw_input() #strings
+input() #Valores numéricos
+
+no Python 3 usa-se apenas input() tanto para strings quanto para numeros e deve-se
+combinar com as funções float ou int:
+meu_texto = input("meu texto") #recebendo textos
+
+numero_inteiro = int(input("Digite um numero inteiro: ")) #recebendo numeros inteiros
+
+numero_decimal = float(input("Digite um numero decimal: ")) #recebendo numeros decimais
+
+--------------------------------------------------------------------------------------------------------------------------
+
+* Tratamento de excessões:
+
+O tratamento de excessões percebe um possível erro previamente mapeado e 
+reage a essa situação com uma solução temporária ou permanente. Evitando 
+a interrupção da execução do programa.
+Exemplo:
+
+a = 2
+b = 2
+
+try:
+	print(a/b)
+
+except:
+	print("não eh permitida divisão por 0")
+--------------------------------------------------------------------------------------------------------------------------
+
+* Escolha de números aleatorios usando python
+
+O python fornece um modulo chamado random, que permite a chamada de alguns métodos que geram numeros aleatorios
+
+import random
+
+#random.seed(1) #força ao resultado ser o mesmo sempre
+numero = random.randint(0,10) #escolhe um numero entre 0 e 10 aleatoriamente
+print(numero)
+
+lista = [6,45,9]
+numero = random.choice() #seleciona um numero de uma lista
+print(numero)
+
+--------------------------------------------------------------------------------------------------------------------------
 * Dicionarios:
 
 Valores especificos são vinculados a uma chave. Exemplo:
@@ -13,6 +72,22 @@ dicionario_sites = {"Strange": "multiverseofmadness.com", "Peter": "semvoltapara
 
 for chave in dicionario_sites:
 	print(dicionario_sites[chave])
+
+O metodo items() retorna uma tupla com as chaves e valores, que serão uma composição imutavel de chave e valor
+
+for i in meu_dicionario.items():
+	print(i)
+
+O metodo values() retorna só os valores, você pode navegar pelos valores
+
+for i in meu_dicionario.values():
+	print(i)
+
+O metodo keys() retorna só as chaves, você pode navegar pelas chaves
+
+for i in meu_dicionario.keys():
+	print(i)
+
 
 -------------------------------------------------------------------------------
 * Listas:
