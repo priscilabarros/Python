@@ -1,6 +1,6 @@
 Lista de exercícios 1
-1. Faça um programa que receba a idade do usuário e diga se ele é maior ou 
-menor de idade.  [Done] 
+#1. Faça um programa que receba a idade do usuário e diga se ele é maior ou 
+menor de idade.[ Done ] 
 
 idade = int(input("Digite sua idade: "))
 if idade < 0:
