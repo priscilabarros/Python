@@ -1,6 +1,15 @@
 Lista de exercícios 1
 1. Faça um programa que receba a idade do usuário e diga se ele é maior ou 
-menor de idade.    
+menor de idade.  [Done] 
+
+idade = int(input("Digite sua idade: "))
+if idade < 0:
+    print("Idade nao valida")
+elif idade < 18:
+    print("Menor de idade.")
+else:
+    print("Maior de idade.")
+ 
 2. Faça um programa que receba duas notas digitadas pelo usuário. Se a nota
  for maior ou igual a seis, escreva aprovado, senão escreva reprovado. 
 3. Escreva um programa que resolva uma equação de segundo grau.  
