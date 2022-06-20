@@ -10,11 +10,75 @@ elif idade < 18:
 else:
     print("Maior de idade.")
  
-2. Faça um programa que receba duas notas digitadas pelo usuário. Se a nota
- for maior ou igual a seis, escreva aprovado, senão escreva reprovado. 
-3. Escreva um programa que resolva uma equação de segundo grau.  
-4. Escreva um programa que ordene uma lista numérica com três elementos.  
-5. Escreva um programa que receba dois números e um sinal, e faça a operação matemática definida pelo sinal.    
+#2. Faça um programa que receba duas notas digitadas pelo usuário. Se a nota for maior ou igual a seis,
+# escreva aprovado, senão escreva reprovado.[ Done ] 
+
+nota1 = float(input("Digite a primeira nota:"))
+nota2 = float(input("Digite a segunda nota:"))
+
+if nota1 >= 6 and nota2 >= 6:
+    print("APROVADO")
+else:
+    print("REPROVADO")
+
+#3. Escreva um programa que resolva uma equação de segundo grau. [ Done ] 
+import math
+
+a = int(input("Digite a variavel a:"))
+b = int(input("Digite a variavel b:"))
+c = int(input("Digite a variavel c:"))
+
+if a != 0 and b != 0 and c != 0:
+    delta = ((b * b) - 4 * a * c)
+
+    x1 = ((-1*b) + math.sqrt(delta)) / (2 * a)
+    x2 = ((-1*b) - math.sqrt(delta)) / (2 * a)
+
+    print(" As raizes da equacao sao, X1:",x1,"X2:",x2)
+elif a != 0 and b == 0 and c != 0:
+    x1 = math.sqrt(-c/a)
+    x2 = -1 * x1
+
+    print(" As raizes da equacao sao, X1:", x1, "X2:", x2)
+elif a != 0 and b != 0 and c == 0:
+    x1 = 0
+    x2 = -b / a
+
+    print(" As raizes da equacao sao, X1:", x1, "X2:", x2) 
+
+#4. Escreva um programa que ordene uma lista numérica com três elementos. [ Done ] 
+
+tamanho = 0
+lista = []
+
+while tamanho < 3:
+    numero = input("Adicione um numero na lista: ")
+    lista.append(numero)
+    tamanho += 1
+
+lista.sort()
+print(lista)
+ 
+#5. Escreva um programa que receba dois números e um sinal, e faça a
+# operação matemática definida pelo sinal.  [ Done ] 
+
+
+numero1 = float(input("Digite um numero: "))
+numero2 = float(input("Digite um numero: "))
+sinal = input("Digite o sinal de operacao: ")
+
+if sinal == '+':
+    resultado = numero1 + numero2
+    print("O resultado da soma eh: ",resultado)
+elif sinal == '-':
+    resultado = numero1 - numero2
+    print("O resultado da subtracao eh: ",resultado)
+elif sinal == '*':
+    resultado = numero1 * numero2
+    print("O resultado da multiplicacao eh: ",resultado)
+elif sinal == '/':
+    resultado = numero1 / numero2
+    print("O resultado da divisao eh: ",resultado)   
 
 --------------------------------------------------------------------------------------------------------------------------
 * Python 2 vs. Python 3:
