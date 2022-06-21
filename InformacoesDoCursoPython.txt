@@ -1,3 +1,11 @@
+* List Comprehension
+
+Exemplo:
+x = [1,2,3,4,5]
+y = [valor_a_adicionar,laço,condição ]
+y = [i**2 for i in x]
+z = [i for i in x if i%2==1]
+--------------------------------------------------------------------------------------------------------------------
 Lista de exercícios 1
 #1. Faça um programa que receba a idade do usuário e diga se ele é maior ou 
 menor de idade.[ Done ] 
