@@ -1,3 +1,52 @@
+* Função zip
+Compacta duas listas como se fosse uma lista em um laço.
+
+Exemplo:
+lista1 = [1,2,3,4,5] 
+lista2 = ["abacate","bola","cachorro","dinheiro","elefante"]
+lista3 = ["2,00","5,00","Nao tem preco","Nao tem preco","Nao tem preco"]
+
+for numero, nome in zip(lista1, lista2):
+	print(numero,nome)
+
+--------------------------------------------------------------------------------------------------------------------
+* Função reduce
+essa função recebe uma lista e retorna um unico valor.
+
+Exemplo:
+from functools import reduce
+
+def soma(x,y):
+	return x+y
+
+lista = [1,3,5,10,20]
+
+soma = reduce(soma,lista)
+print(soma)
+--------------------------------------------------------------------------------------------------------------------
+
+* Função map:
+Pega uma função e aplica para todos os elementos de uma lista.
+
+Exemplo:
+def dobro(x):
+	return x*2
+
+valor = [1,2,3,4,5]
+
+valor_dobrado = map(dobro,valor)
+
+valor_dobrado = list(valor_dobrado)
+print(valor_dobrado)
+--------------------------------------------------------------------------------------------------------------------
+* Função Enumerate: 
+Mostra a posicao de cada item da lista
+
+Exemplo:
+lista = ["abacate","bola","cachorro"]
+for i, nome in enumerate(lista):
+	print(i,nome)
+--------------------------------------------------------------------------------------------------------------------
 * List Comprehension
 
 Exemplo:
